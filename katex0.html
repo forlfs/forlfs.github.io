@@ -7,13 +7,11 @@
     <script src="katex/katex.min.js" integrity="sha384-2BKqo+exmr9su6dir+qCw08N2ZKRucY4PrGQPPWU1A7FtlCGjmEGFqXCv5nyM5Ij" crossorigin="anonymous"></script>
   </head>
   <body>
-    <p name="x">test</p>
+    <span class="x">test</span>
     <script>
       var i;
-      var x = document.getElementsByName("x");
-      for (i = 0; i < x.length; i++) {
-        katex.render("\\frac{x^2}{a^2} + \\frac{y^2}{b^2} = 1", x[i]);
-      }
+      var x = document.getElementsByClassName("x");
+      katex.render("\\frac{x^2}{a^2} + \\frac{y^2}{b^2} = 1", x[0]);
     </script>
   </body>
 </html>
